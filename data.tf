@@ -286,7 +286,9 @@ data "aws_iam_policy_document" "this" {
         "iam:ListMFADevices",
         "iam:ListVirtualMFADevices",
         "iam:ResyncMFADevice",
-        "sts:GetSessionToken"
+        "sts:GetSessionToken",
+        "iam:ChangePassword",
+        "iam:GetAccountPasswordPolicy"
       ]
       resources = ["*"]
       condition {
