@@ -294,7 +294,7 @@ data "aws_iam_policy_document" "this" {
       condition {
         test     = "BoolIfExists"
         variable = "aws:MultiFactorAuthPresent"
-        values   = ["false, "]
+        values   = ["false"]
       }
     }
   }
